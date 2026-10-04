@@ -1,0 +1,6 @@
+approach,accuracy_mean,accuracy_std,sensitivity_mean,sensitivity_std,auc_mean,auc_std
+"Local only: Hospital A (teaching, referral)",0.9643,0.0136,0.9453,0.0238,0.993,0.0046
+Local only: Hospital B (regional),0.9608,0.0149,0.9142,0.038,0.9924,0.0052
+Local only: Hospital C (district),0.942,0.0227,0.8623,0.0537,0.989,0.0087
+Federated (FedAvg),0.9727,0.0123,0.9519,0.0211,0.9942,0.0046
+Pooled data (no privacy),0.9738,0.0103,0.9491,0.0247,0.994,0.0044

@@ -1,0 +1,14 @@
+Hospital profiles (training patients, malignant cases):
+  Hospital A (teaching, referral)     255 patients, 122 malignant (48%)
+  Hospital B (regional)               128 patients,  32 malignant (25%)
+  Hospital C (district)                43 patients,   5 malignant (12%)
+
+Results over 20 random splits (mean ± std), same held-out test set per split
+Approach                                                Accuracy     Sensitivity             AUC
+Local only: Hospital A (teaching, referral)         0.964 ± 0.014    0.945 ± 0.024    0.993 ± 0.005
+Local only: Hospital B (regional)                   0.961 ± 0.015    0.914 ± 0.038    0.992 ± 0.005
+Local only: Hospital C (district)                   0.942 ± 0.023    0.862 ± 0.054    0.989 ± 0.009
+Federated (FedAvg)                                  0.973 ± 0.012    0.952 ± 0.021    0.994 ± 0.005
+Pooled data (no privacy)                            0.974 ± 0.010    0.949 ± 0.025    0.994 ± 0.004
+
+Saved results.csv, sensitivity_by_approach.png and fedavg_auc_by_round.png to results/
